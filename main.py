@@ -1,0 +1,28 @@
+from User import User
+persona1=User("henry","torres")
+persona2=User("samuel","zapata")
+persona3=User("pedro","sanchez")
+
+print("********** Persona 1 **********")
+persona1.make_deposit(30)
+persona1.make_deposit(300)
+persona1.make_deposit(3000)
+persona1.make_withdraw(2000)
+print(persona1.__dict__)
+persona1.display_user_balance()
+
+print("********** Persona 2 **********")
+persona2.make_deposit(300)
+persona2.make_deposit(2000)
+persona2.make_withdraw(200)
+persona2.make_withdraw(500)
+print(persona1.__dict__)
+persona2.display_user_balance()
+
+print("********** Persona 3 **********")
+persona3.make_deposit(1000)
+persona3.make_withdraw(200)
+persona3.make_withdraw(100)
+persona3.make_withdraw(300)
+print(persona3.__dict__)
+persona3.display_user_balance()
